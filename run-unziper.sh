@@ -25,3 +25,8 @@ echo -e "[ = ]\tStarting Container to unzip files at: ${ZIP_PATH}"
 docker run --rm -it -v ${ZIP_PATH}:/home/user/:z ${DOCKER_IMAGE}
 
 [[ $? == 0 ]] && echo -e "[ + ]\tunzip Success" || echo -e "\n[ ! ]\tunzip Failed"
+
+# Removing the image
+[ -z "$(docker images -q unziper)" ] || docker rmi unziper >/dev/null
+
+echo -e "[ _ ]\tBye"
