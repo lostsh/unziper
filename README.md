@@ -6,5 +6,8 @@ To unzip all .zip in the current dir
 To unzip all .zip in a specific dir
 `./run-unziper.sh /home/directory/to/zip/files`
 
-# Dep
+# Dependency
 > docker
+
+# Note
+The wrapper handle the image build and deletion by itself.
