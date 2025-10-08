@@ -6,6 +6,8 @@
 DOCKER_IMAGE="unziper"
 ZIP_PATH="./"
 
+echo -e "[ > ]\tDocker Unziper"
+
 # Check for image presence
 if [ -z "$(docker images -q unziper)" ]; then
     echo -e "[ > ]\tDocker Building Image"
