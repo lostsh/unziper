@@ -11,3 +11,18 @@ To unzip all .zip in a specific dir
 
 # Note
 The wrapper handle the image build and deletion by itself.
+
+
+# Other options : 
+With python3: 
+```python3
+import zipfile
+
+with zipfile.ZipFile('test.zip', "r") as z:
+  z.extractall("/home/user/directory")
+```
+
+With java:
+```bash
+jar xvf file.zip
+```
